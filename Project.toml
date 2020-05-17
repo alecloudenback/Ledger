@@ -1,0 +1,13 @@
+name = "Accounting"
+uuid = "fba18957-09fc-4a37-ab4d-464a4515c58b"
+authors = ["Alec Loudenback"]
+version = "0.1.0"
+
+[compat]
+julia = "1.4"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]
