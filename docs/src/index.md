@@ -1,8 +1,8 @@
-# Accounting.jl
+# Ledger.jl
 
 ```@index
 ```
 
 ```@autodocs
-Modules = [Accounting]
+Modules = [Ledger]
 ```

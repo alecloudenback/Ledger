@@ -1,4 +1,4 @@
-name = "Accounting"
+name = "Ledger"
 uuid = "fba18957-09fc-4a37-ab4d-464a4515c58b"
 authors = ["Alec Loudenback"]
 version = "0.1.0"

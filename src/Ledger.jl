@@ -1,15 +1,15 @@
-module Accounting
+module Ledger
 
 using Transducers
 
-abstract type Ledger end
+abstract type AbstractLedger end
 
-struct SubLedger 
+struct SubLedger <: AbstractLedger
     name
     contents
 end
 
-struct GeneralLedger
+struct GeneralLedger <: AbstractLedger
     assets
     liabilities
     equity
@@ -23,7 +23,7 @@ function addAsset!(gl::GeneralLedger,a)
     push!(gl.assets,a)
 end
 
-function addLiabilitity!(gl::GeneralLedger,l)
+function addLiability!(gl::GeneralLedger,l)
     push!(gl.liabilities,l)
 end
 
@@ -61,6 +61,6 @@ function Balance(basis::ValuationBasis,l::GeneralLedger)
 end
 
 export value, Asset, Liability, Balance, GeneralLedger,
-        addAsset!,addLiabilitity!
+        addAsset!,addLiability!
 
 end # module
